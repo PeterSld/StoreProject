@@ -1,0 +1,99 @@
+<html> 
+  <head>
+    <title> PartyParty Store</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="party, party store, balloons">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/logoFav.jpg" type="image/x-icon">
+    <!--Не забыть изменить описание-->
+    <meta name = "description" content="Description">  
+    <meta name="author" content="PartyPartyShop">
+    <script src="JS/categoryScript.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel = "stylesheet" href="CSS/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  </head>
+  <style>
+    .imgContent{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .imgContainer img{
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+    }
+    .coverBox{
+      margin: 30px 10px;
+      height: auto;
+      text-align: center;
+      width:95%;
+    }
+    .imgContainer{
+      height: 300px;
+      overflow: hidden;
+    }
+    @media screen and (min-width: 576px){
+      .imgContainer{
+        height: 400px;
+      }
+      .coverBox{
+        width: calc(100%/3 - 20px);
+      }
+    }
+  </style>
+  <body>
+    <header id = "header">
+        <div class = "headerRow">
+          <div class = "language">
+            <input type="image" src="images/english.png">
+            <input type="image" src="images/thai.png">
+            <input type="image" src="images/russian.png">
+          </div>
+          <a href="index.html"><img class="logo" src="images/logo.png"></a>
+          <div class="socials">
+            <a href="https://www.facebook.com/PartyStorePhuket" target="_blank"><img src="images/fb.png"></a>
+            <a href="https://www.secure.instagram.com/partystore_phuket/" target="_blank"><img src="images/insta.png"></a>
+            <a href="https://wa.me/9262960190" target="_blank"><img src="images/whatsapp.png"></a>
+          </div>
+        </div>
+    </header>
+    <hr>
+    <div class="imgContent">
+      <div class="coverBox">
+        <div class="imgContainer">
+          <img src="images/ballons1.jpg">
+        </div>
+        <span>Набор шаров 1</span>
+      </div>
+      <div class="coverBox">
+        <div class="imgContainer">
+          <img src=" images/ballons5.jpg">
+        </div>
+        <span>Набор шаров 2</span>
+      </div>
+      <div class="coverBox">
+        <div class="imgContainer">
+          <img src="images/ballons3.jpg">
+        </div>
+        <span>Набор шаров 3</span>
+      </div>
+      <div class="coverBox">
+        <div class="imgContainer">
+          <img src="images/ballons4.jpg">
+        </div>
+        <span>Набор шаров 4</span>
+      </div>
+      <div class="coverBox">
+        <div class="imgContainer">
+          <img src="images/ballons2.jpg">
+        </div>
+        <span>Набор шаров 5</span>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <p>email: example@gmail.com</p><p>tel: +66 000000000000</p><p>address: example</p><img src="images/footer.png">
+    </footer>
+  </body>

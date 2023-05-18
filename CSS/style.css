@@ -1,0 +1,302 @@
+
+body{
+    font-size: 15px;
+    font-family:'Montserrat', sans-serif;
+    margin: 0px;
+    background-color: white;
+}
+hr{
+    margin: 0;
+}
+#header{
+    background: linear-gradient(to right, white,rgb(146, 221, 246));
+}
+.headerRow{
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    margin: 0 20px 0;
+    display: flex; 
+}
+.language input, .socials img{
+    width: 30px;
+    height: 30px;
+
+}
+
+.logo{
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sticky{
+    z-index: 1000;
+    animation: slideDown 0.35s ease-out;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.content{
+    margin: 16px 30px 0;
+}
+.intro{
+    margin: 0 0 80px;
+    padding: 10px 0;
+}
+.intro p, .mainInfo p{
+    padding: 0 0 0 10px;
+}
+.main h1{
+    padding-bottom: 10px;
+    background: linear-gradient(to left, white,rgb(146, 221, 246));
+}
+.mainInfo{
+    border-radius: 10px;
+    background: linear-gradient(to left, white,rgb(146, 221, 246));
+    margin: 0 0 80px;
+    padding-bottom: 10px;
+}
+.intro img, .mainInfo img{
+    border-radius: 20px;
+    width: 95%;
+    padding: 0 2.5%;
+}
+#callToAction{
+    font-size: 25px;
+    margin: 0 auto 10px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 80%;
+}
+#callToAction a{
+    color: rgb(241, 59, 22);
+}
+.slider{
+
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, white,rgb(241, 59, 22),white);
+    width: 100%;
+    margin: 0 auto 80px;
+    min-height: 240px;
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    width: 95%;
+    padding: 0 2.5% 0;
+    max-width: auto;
+    min-height: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.slide img{
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    border-radius: 15px;
+}
+.slide img:hover{
+    transform: scale(1.05);
+    transition: 0.25s;
+}
+.btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+}
+.btn:active{
+    transform: scale(1.1);
+}
+.btn-prev{
+    top: 50%;
+    left: 2%;
+}
+.btn-next{
+    top: 50%;
+    right: 2%;
+}
+@keyframes slideDown{
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+h1{
+    margin-top: 40px;
+    text-align: center;
+}
+.advantages{
+    width: auto;
+    margin: 0 auto 80px;
+}
+.advantages div{
+    margin: 10px auto;
+    width: 95%;
+    height: 150px;
+    text-align: center;
+    border: 2px solid black;
+}
+h3{
+    text-align: center;
+}
+.storeFestivalInfo, .storeThalangInfo,.storeChalongInfo{
+    word-wrap: break-word;
+    min-height: 450px;
+    margin: 0 auto 30px;
+}
+.storeChalongSlider, .storeFestivalSlider, .storeThalangSlider{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 25px;
+    min-height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+.storeChalongSlide, .storeFestivalSlide, .storeThalangSlide{
+    width: 95%;
+    padding: 0 2.5%;
+    height: fit-content;
+    position: absolute;
+    transition: all 0.5s;
+}
+.storeChalongSlide img, .storeFestivalSlide img, .storeThalangSlide img{
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    object-fit:contain;
+}
+.storeChalongBtn, .storeFestivalBtn, .storeThalangBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+}
+.storeChalongBtn:active, .storeFestivalBtn:active, .storeThalangBtn:active{
+    transform: scale(1.1);
+}
+.storeChalongBtn-prev, .storeFestivalBtn-prev, .storeThalangBtn-prev{
+    margin-top: 20%;
+    margin-bottom: 20%;
+    left: 2%;
+}
+.storeChalongBtn-next, .storeFestivalBtn-next, .storeThalangBtn-next{
+    margin-top: 20%;
+    margin-bottom: 20%;
+    right: 2%;
+}
+.mapChalong, .mapFestival, .mapThalang{
+    object-fit: contain;
+    margin: 0 auto;
+    width:99%;
+}
+.mapChalong iframe, .mapFestival iframe, .mapThalang iframe{
+    width: 100%;
+    min-height: 200px;
+}
+footer{
+    margin: 16px 30px 0;
+    line-height: 0.5;
+    text-align: center;
+}
+footer img{
+    max-width: 200px;
+}
+@media screen and (min-width: 600px){
+    .logo, .language input, .socials img{
+        width: auto;
+        height: auto;
+    }
+    .intro{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 5%;
+    }
+    .mainInfoText{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 5%;
+    }
+    .intro img, .mainInfo img{
+        width: calc(200%/3);
+        height: auto;
+        padding: 0;
+    }
+    .intro p{
+        width: calc(100%/3);
+    }
+    .slider{
+        min-height: 220px;
+        padding-top: 0;
+    }
+    #callToAction{
+        margin: 0 auto 25px;
+        width: 60%;
+    }
+    .slide{
+        padding:10px 10px ;
+        width: calc(100%/3 - 20px);
+    }
+    .advantages{
+        display: flex;
+    }
+    .advantages div{
+        width: calc(100%/3 - 20px);
+    }
+    .storeChalongSlider,.storeFestivalSlider, .storeThalangSlider{
+        float: left;
+        margin: 0 20px;
+        width: calc(50% - 40px);
+    }
+    .storeChalongInfo, .storeFestivalInfo, .storeThalangInfo{
+        min-height: 327px;
+    }
+    
+}
+@media screen and (min-width: 850px){
+    .mapChalong, .mapFestival, .mapThalang{
+        width: 49%;
+        float: right;
+    }
+    .storeChalongInfo, .storeFestivalInfo, .storeThalangInfo{
+        margin: 0, auto;
+    }
+    .storeChalongSlider,.storeFestivalSlider, .storeThalangSlider{
+        min-height: 230px;
+    }
+}
+@media screen and (min-width: 1300px){
+    .slider{
+        min-height: 340px;
+    }
+}
