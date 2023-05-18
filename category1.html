@@ -25,21 +25,29 @@
       object-fit:cover;
     }
     .coverBox{
-      margin: 30px 10px;
+      margin: 20px 10px;
       height: auto;
       text-align: center;
       width:95%;
+      border: 2px solid black;
+      padding-bottom: 5px;
     }
     .imgContainer{
-      height: 300px;
+      height: 325px;
       overflow: hidden;
+      margin-bottom: 10px;
     }
     @media screen and (min-width: 576px){
       .imgContainer{
-        height: 400px;
+        height: 350px;
       }
       .coverBox{
         width: calc(100%/3 - 20px);
+      }
+    }
+    @media screen and (min-width: 796px){
+      .imgContainer{
+        height: 400px;
       }
     }
   </style>
@@ -51,7 +59,7 @@
             <input type="image" src="images/thai.png">
             <input type="image" src="images/russian.png">
           </div>
-          <a href="index.html"><img class="logo" src="images/logo.png"></a>
+          <a class="logo" href="index.html"><img src="images/logo.png"></a>
           <div class="socials">
             <a href="https://www.facebook.com/PartyStorePhuket" target="_blank"><img src="images/fb.png"></a>
             <a href="https://www.secure.instagram.com/partystore_phuket/" target="_blank"><img src="images/insta.png"></a>
