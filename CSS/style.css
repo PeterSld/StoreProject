@@ -44,11 +44,7 @@ hr{
 .content{
     margin: 16px 30px 0;
 }
-.intro{
-    margin: 0 0 80px;
-    padding: 10px 0;
-}
-.intro p, .mainInfo p{
+.mainInfo p{
     padding: 0 0 0 10px;
 }
 .main h1{
@@ -61,7 +57,7 @@ hr{
     margin: 0 0 80px;
     padding-bottom: 10px;
 }
-.intro img, .mainInfo img{
+.mainInfo img{
     border-radius: 20px;
     width: 95%;
     padding: 0 2.5%;
@@ -241,13 +237,6 @@ footer img{
         width: auto;
         height: auto;
     }
-    .intro{
-        display: flex;
-        align-items:center;
-        justify-content:center;
-        grid-template-columns: 2fr 1fr;
-        column-gap: 5%;
-    }
     .mainInfoText{
         display: flex;
         align-items:center;
@@ -255,13 +244,10 @@ footer img{
         grid-template-columns: 1fr 2fr;
         column-gap: 5%;
     }
-    .intro img, .mainInfo img{
+    .mainInfo img{
         width: calc(200%/3);
         height: auto;
         padding: 0;
-    }
-    .intro p{
-        width: calc(100%/3);
     }
     .slider{
         height: 280px;
