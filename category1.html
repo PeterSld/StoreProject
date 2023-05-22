@@ -8,6 +8,7 @@
     <!--Не забыть изменить описание-->
     <meta name = "description" content="Description">  
     <meta name="author" content="PartyPartyShop">
+    <script src="https://kit.fontawesome.com/adaea234c6.js" crossorigin="anonymous"></script>
     <script src="JS/categoryScript.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel = "stylesheet" href="CSS/style.css">
@@ -39,6 +40,14 @@
       overflow: hidden;
       margin-bottom: 10px;
     }
+    .returnHome{
+      z-index: 1000;
+      animation: slideDown 0.35s ease-out;
+      backdrop-filter: blur(10px);
+      position: fixed;
+      bottom: 5%;
+      right: 5%;
+    }
     @media screen and (min-width: 576px){
       .imgContainer{
         height: 350px;
@@ -53,7 +62,8 @@
       }
     }
   </style>
-  <body>
+  <body style="position: relative;">
+    <a href="index.html" class="returnHome"><i class="fa-solid fa-house fa-5x"></i></a>
     <header id = "header">
         <div class = "headerRow">
           <div class = "language">
