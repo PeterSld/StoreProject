@@ -40,7 +40,7 @@ hr{
     margin: 16px 30px 0;
 }
 .mainInfo p{
-    text-align-last: justify;
+    text-align: justify;
     padding: 0 0 0 10px;
 }
 .main h1{
@@ -164,9 +164,12 @@ h3{
 }
 .storeFestivalInfo, .storeThalangInfo,.storeChalongInfo{
     word-wrap: break-word;
-    min-height: 450px;
+    min-height: 377px;
     margin: 0 auto 30px;
-    text-align-last: justify;
+    text-align: justify;
+}
+.storeFestivalInfo p, .storeThalangInfo p,.storeChalongInfo p{
+    margin-top: 0;
 }
 .storeChalongSlider, .storeFestivalSlider, .storeThalangSlider{
     display: flex;
@@ -291,16 +294,19 @@ footer img{
         width: calc(100%/3 - 20px);
     }
     .storeChalongSlider,.storeFestivalSlider, .storeThalangSlider{
-        float: left;
-        margin: 0 20px;
-        width: calc(50% - 40px);
+        min-height: 327px;
     }
-    
     
 }
 @media screen and (min-width: 850px){
     .slider{
         height: 435px;
+    }
+    .storeChalongSlider,.storeFestivalSlider, .storeThalangSlider{
+        float: left;
+        margin: 0 20px;
+        width: calc(50% - 40px);
+        min-height: 420px;
     }
     .mapChalong, .mapFestival, .mapThalang{
         width: 49%;
@@ -308,9 +314,6 @@ footer img{
     }
     .storeChalongInfo, .storeFestivalInfo, .storeThalangInfo{
         margin: 0, auto;
-    }
-    .storeChalongSlider,.storeFestivalSlider, .storeThalangSlider{
-        min-height: 420px;
     }
 }
 @media screen and (min-width: 1300px){
