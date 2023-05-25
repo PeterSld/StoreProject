@@ -19,21 +19,16 @@ hr{
     display: flex; 
 }
 .language input, .socials img{
-    width: 30px;
-    height: 30px;
-
+    height: 6vw;
 }
-
 .logo{
-    height: 40px;
+    height: 12vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.logo img{
-    height: 40px;
-}
 .sticky{
+
     z-index: 1000;
     animation: slideDown 0.35s ease-out;
     backdrop-filter: blur(10px);
@@ -45,6 +40,7 @@ hr{
     margin: 16px 30px 0;
 }
 .mainInfo p{
+    text-align-last: justify;
     padding: 0 0 0 10px;
 }
 .main h1{
@@ -77,42 +73,54 @@ hr{
     height: 360px;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, white,rgb(241, 59, 22),white);
     width: 100%;
     margin: 0 auto 80px;
-    min-height: 240px;
+    min-height: 260px;
     position: relative;
     overflow: hidden;
 }
 .slide{
+    border: 20px solid white;
+    border-radius: 35px;
     width: 95%;
-    padding: 0 2.5% 0;
-    max-width: auto;
     min-height: 200px;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
+    flex-direction: column;
+    margin-bottom: -10px;
+    background-color: rgb(0, 162, 255);
+    font-weight: 800;
+    color: white;
+}
+.slide a{
+    color: white;
+    text-decoration: none;
 }
 .slide img{
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
     width: 100%;
     height: auto;
     object-fit:contain;
-    border-radius: 15px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
 }
 .slide img:hover{
     transform: scale(1.05);
     transition: 0.25s;
+}
+.slideDescription{
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 .btn {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     z-index: 10px;
     cursor: pointer;
@@ -123,12 +131,12 @@ hr{
     transform: scale(1.1);
 }
 .btn-prev{
-    top: 50%;
-    left: 2%;
+    top: 45%;
+    left: 0%;
 }
 .btn-next{
-    top: 50%;
-    right: 2%;
+    top: 45%;
+    right: 0%;
 }
 @keyframes slideDown{
     from {
@@ -138,20 +146,18 @@ hr{
         transform: translateY(0);
     }
 }
+.pricePaymentDelivery img{
+    width: calc(100%/3);
+}
+.price{
+    margin-right: -5px;
+}
+.delivery{
+    margin-left: -5px;
+}
 h1{
     margin-top: 40px;
     text-align: center;
-}
-.advantages{
-    width: auto;
-    margin: 0 auto 80px;
-}
-.advantages div{
-    margin: 10px auto;
-    width: 95%;
-    height: 150px;
-    text-align: center;
-    border: 2px solid black;
 }
 h3{
     text-align: center;
@@ -160,6 +166,7 @@ h3{
     word-wrap: break-word;
     min-height: 450px;
     margin: 0 auto 30px;
+    text-align-last: justify;
 }
 .storeChalongSlider, .storeFestivalSlider, .storeThalangSlider{
     display: flex;
@@ -233,9 +240,19 @@ footer img{
     }
 }
 @media screen and (min-width: 600px){
-    .logo, .logo img, .language input, .socials img{
-        width: auto;
-        height: auto;
+    .sticky{
+        .logo{
+            height: 6vw;
+        }
+        .language input, .socials img{
+            height: 3vw;
+        }
+    }
+    .language input, .socials img{
+        height: 4vw;
+    }
+    .logo{
+        height: 8vw;
     }
     .mainInfoText{
         display: flex;
@@ -250,21 +267,27 @@ footer img{
         padding: 0;
     }
     .slider{
-        height: 280px;
+        height: 300px;
         padding-top: 0;
+    }
+    .btn{
+        width: 40px;
+        height: 40px;
+    }
+    .btn-next{
+        top: 50%;
+        right:2%;
+    }
+    .btn-prev{
+        top:50%;
+        left:2%;
     }
     #callToAction{
         margin: 0 auto 25px;
         width: 60%;
     }
     .slide{
-        padding:10px 10px ;
-        width: calc(100%/3 - 20px);
-    }
-    .advantages{
-        display: flex;
-    }
-    .advantages div{
+        border: 10px solid white;
         width: calc(100%/3 - 20px);
     }
     .storeChalongSlider,.storeFestivalSlider, .storeThalangSlider{
@@ -272,14 +295,12 @@ footer img{
         margin: 0 20px;
         width: calc(50% - 40px);
     }
-    .storeChalongInfo, .storeFestivalInfo, .storeThalangInfo{
-        min-height: 327px;
-    }
+    
     
 }
 @media screen and (min-width: 850px){
     .slider{
-        height: 415px;
+        height: 435px;
     }
     .mapChalong, .mapFestival, .mapThalang{
         width: 49%;
@@ -289,11 +310,11 @@ footer img{
         margin: 0, auto;
     }
     .storeChalongSlider,.storeFestivalSlider, .storeThalangSlider{
-        min-height: 230px;
+        min-height: 420px;
     }
 }
 @media screen and (min-width: 1300px){
     .slider{
-        height: 650px;
+        height: 670px;
     }
 }
