@@ -22,13 +22,15 @@ hr{
     height: 6vw;
 }
 .logo{
-    height: 12vw;
+    height: 24vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .sticky{
-
+    .logo{
+        height: 12vw;
+    }
     z-index: 1000;
     animation: slideDown 0.35s ease-out;
     backdrop-filter: blur(10px);
@@ -41,7 +43,8 @@ hr{
 }
 .mainInfo p{
     text-align: justify;
-    padding: 0 0 0 10px;
+    padding: 0 10px;
+    line-height: 1.5;
 }
 .main h1{
     padding-bottom: 10px;
@@ -49,7 +52,7 @@ hr{
 }
 .mainInfo{
     border-radius: 10px;
-    background: linear-gradient(to left, white,rgb(146, 221, 246));
+    background: linear-gradient(to right, white,rgb(146, 221, 246));
     margin: 0 0 80px;
     padding-bottom: 10px;
 }
@@ -255,14 +258,14 @@ footer img{
         height: 4vw;
     }
     .logo{
-        height: 8vw;
+        height: 15vw;
     }
     .mainInfoText{
         display: flex;
         align-items:center;
         justify-content:center;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 5%;
+        grid-template-columns: 1fr 1fr;
+  
     }
     .mainInfo img{
         width: calc(200%/3);
@@ -314,6 +317,11 @@ footer img{
     }
     .storeChalongInfo, .storeFestivalInfo, .storeThalangInfo{
         margin: 0, auto;
+    }
+}
+@media screen and (min-width: 1000px){
+    .mainInfo img{
+        width: 50%;
     }
 }
 @media screen and (min-width: 1300px){
