@@ -5,9 +5,24 @@ function myFunction(){
     if (window.pageYOffset > sticky+190){
         header.classList.add("sticky");
     } else {
-        header.classList.remove("sticky")
+        header.classList.remove("sticky");
     }
 }
+
+const ppdbtn = document.getElementById("ppdOpen");
+const ppdContent = document.querySelector(".ppdContent");
+const ppd = document.querySelector(".ppd");
+const ppdClose = document.getElementById("ppdClose")
+ppdbtn.addEventListener("click", function(){
+    ppdContent.classList.remove("hide");
+    ppdClose.classList.remove("hide");
+    ppdbtn.classList.add("hide");
+})
+ppdClose.addEventListener("click", function(){
+    ppdContent.classList.add("hide");
+    ppdClose.classList.add("hide");
+    ppdbtn.classList.remove("hide");
+})
 
 const slides = document.querySelectorAll(".slide");
 slides.forEach((slide, indx)=>{
