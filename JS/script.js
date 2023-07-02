@@ -1,9 +1,11 @@
 window.onscroll = function() {myFunction()};
 var header = document.getElementById("header");
-var sticky = header.offsetTop
+var sticky = header.getBoundingClientRect();
+console.log(sticky);
 function myFunction(){
-    if (window.pageYOffset > sticky+190){
+    if (window.scrollY > sticky.height + 100){
         header.classList.add("sticky");
+        
     } else {
         header.classList.remove("sticky");
     }
