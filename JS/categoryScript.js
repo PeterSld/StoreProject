@@ -20,7 +20,6 @@ function smoothScroll() {
     var target = whatsapp;
     var scrollContainer = target;
     do {
-        scrollContainer = scrollContainer.parentNode;
         if (!scrollContainer) return;
         scrollContainer.scrollTop += 1;
     } while (scrollContainer.scrollTop == 0);
