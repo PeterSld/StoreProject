@@ -1,10 +1,11 @@
 
 body{
-    overflow-x: hidden;
     font-size: 15px;
     font-family:'Montserrat', sans-serif;
     margin: 0px;
     background-color: white;
+    background-image: url("../images/essentials/bg.png");
+    background-size: 25% auto;
 }
 hr{
     margin: 0;
@@ -74,6 +75,7 @@ hr{
     border: 2px solid rgb(146, 221, 246);
     border-radius: 5px;
     width: 80%;
+    background-color: white;
 }
 #callToAction a{
     color: rgb(241, 59, 22);
@@ -171,6 +173,10 @@ hr{
 .ppd img{
     width: calc(100%/3);
 }
+.ppd{
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+}
 .ppdContent{
     position: relative;
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
@@ -209,12 +215,15 @@ hr{
 #ppdOpen, #ppdClose{
     width: 90%;
 }
-h1{
-    margin-top: 40px;
+h1,h3{
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1em;
     text-align: center;
 }
-h3{
-    text-align: center;
+h1{
+    margin-top: 40px;
 }
 .storeFestivalInfo, .storeThalangInfo,.storeChalongInfo{
     display: flex;
@@ -227,6 +236,7 @@ h3{
 }
 .storeFestivalInfo p, .storeThalangInfo p,.storeChalongInfo p{
     margin-top: 0;
+    background-color: white;
 }
 .storeChalongSlider, .storeFestivalSlider, .storeThalangSlider{
     display: flex;
@@ -286,6 +296,9 @@ footer{
     margin: 16px 30px 0;
     line-height: 1.5;
     text-align: center;
+}
+footer p{
+    background-color: white;
 }
 footer img{
     max-width: 200px;
