@@ -3,9 +3,10 @@ body{
     font-size: 15px;
     font-family:'Montserrat', sans-serif;
     margin: 0px;
+    overflow-x: hidden;
     background-color: white;
     background-image: url("../images/essentials/bg.png");
-    background-size: 25% auto;
+    background-size: 20% auto;
 }
 hr{
     margin: 0;
@@ -173,7 +174,7 @@ hr{
 .ppd img{
     width: calc(100%/3);
 }
-.ppd{
+.ppd, .ppdContent{
     backdrop-filter: blur(3px);
     border-radius: 25px;
 }
@@ -206,6 +207,9 @@ hr{
 .ppdContent img{
     width: 100%;
 }
+.ppdContent p{
+    background-color: white;
+}
 #price{
     margin-right: -10px;
 }
@@ -214,6 +218,15 @@ hr{
 }
 #ppdOpen, #ppdClose{
     width: 90%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    background-color: white;
+    border-color: #b117ed;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#ppdOpen:hover, #ppdClose:hover, button:hover{
+    background-color: whitesmoke;
 }
 h1,h3{
     background-color: white;
@@ -299,6 +312,9 @@ footer{
 }
 footer p{
     background-color: white;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer img{
     max-width: 200px;
