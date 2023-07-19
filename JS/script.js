@@ -130,31 +130,31 @@ prevStoreFestivalSlide.addEventListener("click",function(){
     });
 });
 
-const storeThalangSlides = document.querySelectorAll(".storeThalangSlide");
-storeThalangSlides.forEach((storeThalangSlide, storeThalangIndx)=>{
-    storeThalangSlide.style.transform = `translateX(${storeThalangIndx*100}%)`;
+const storeBangtaoSlides = document.querySelectorAll(".storeBangtaoSlide");
+storeBangtaoSlides.forEach((storeBangtaoSlide, storeBangtaoIndx)=>{
+    storeBangtaoSlide.style.transform = `translateX(${storeBangtaoIndx*100}%)`;
 })
-let curStoreThalangSlide = 0;
-let maxStoreThalangSlide = storeThalangSlides.length - 1;
-const nextStoreThalangSlide = document.querySelector(".storeThalangBtn-next");
-nextStoreThalangSlide.addEventListener("click",function(){
-    if (curStoreThalangSlide === maxStoreThalangSlide){
-        curStoreThalangSlide=0;
+let curStoreBangtaoSlide = 0;
+let maxStoreBangtaoSlide = storeBangtaoSlides.length - 1;
+const nextStoreBangtaoSlide = document.querySelector(".storeBangtaoBtn-next");
+nextStoreBangtaoSlide.addEventListener("click",function(){
+    if (curStoreBangtaoSlide === maxStoreBangtaoSlide){
+        curStoreBangtaoSlide=0;
     } else {
-        curStoreThalangSlide++;
+        curStoreBangtaoSlide++;
     }
-    storeThalangSlides.forEach((storeThalangSlide,storeThalangIndx)=>{
-        storeThalangSlide.style.transform = `translateX(${100*(storeThalangIndx-curStoreThalangSlide)}%)`;
+    storeBangtaoSlides.forEach((storeBangtaoSlide,storeBangtaoIndx)=>{
+        storeBangtaoSlide.style.transform = `translateX(${100*(storeBangtaoIndx-curStoreBangtaoSlide)}%)`;
     });
 });
-const prevStoreThalangSlide = document.querySelector(".storeThalangBtn-prev");
-prevStoreThalangSlide.addEventListener("click",function(){
-    if (curStoreThalangSlide === 0){
-        curStoreThalangSlide=maxStoreThalangSlide;
+const prevStoreBangtaoSlide = document.querySelector(".storeBangtaoBtn-prev");
+prevStoreBangtaoSlide.addEventListener("click",function(){
+    if (curStoreBangtaoSlide === 0){
+        curStoreBangtaoSlide=maxStoreBangtaoSlide;
     } else {
-        curStoreThalangSlide--;
+        curStoreBangtaoSlide--;
     }
-    storeThalangSlides.forEach((storeThalangSlide,storeThalangIndx)=>{
-        storeThalangSlide.style.transform = `translateX(${100*(storeThalangIndx-curStoreThalangSlide)}%)`;
+    storeBangtaoSlides.forEach((storeBangtaoSlide,storeBangtaoIndx)=>{
+        storeBangtaoSlide.style.transform = `translateX(${100*(storeBangtaoIndx-curStoreBangtaoSlide)}%)`;
     });
 });
